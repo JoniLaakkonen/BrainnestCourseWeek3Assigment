@@ -22,7 +22,8 @@ function selectPlayer() {
     let selectedPlayer;
     let selectedMove = prompt('Type in what is your call; Rock, paper or Scissors').toLowerCase(); 
     //let numbr = prompt('Enter number 1-3 to select your move => 1 = Rock, 2 = Paper, 3 = Scissors'); 
-
+    selectedMove = selectedMove.toLowerCase(); 
+    
     switch (selectedMove) {
       case "rock":
         selectedPlayer = "Rock";
